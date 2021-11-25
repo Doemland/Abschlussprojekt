@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="977.0" style="-fx-background-color: #F4EEF5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="166.0" prefWidth="977.0" styleClass="container" stylesheets="@../css/ContainerStyl.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="Home" fitHeight="140.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true" styleClass="container">
+               <image>
+                  <Image url="@../images/angepast.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="17.5" right="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label fx:id="MenueName" alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="728.0" styleClass="TextElementHeader" stylesheets="@../css/TextElement.css" text="Willkommen" />
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <GridPane prefHeight="583.0" prefWidth="175.0" styleClass="container" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="bestellungButton" alignment="CENTER" mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" stylesheets="@../css/Button.css" text="Bestellung" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button fx:id="verlaufButton" alignment="CENTER" layoutX="10.0" layoutY="29.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" stylesheets="@../css/Button.css" text="Verlauf" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="schluesselButton" alignment="CENTER" mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" stylesheets="@../css/Button.css" text="Schlüssel" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="kontaktButton" alignment="CENTER" mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" stylesheets="@../css/Button.css" text="Kontakt" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </BorderPane.margin>
+         <stylesheets>
+            <URL value="@../css/Button.css" />
+            <URL value="@../css/ContainerStyl.css" />
+         </stylesheets>
+      </GridPane>
+   </left>
+   <center>
+      <ScrollPane fx:id="scrollPaneContainerView" style="-fx-background-color: #F4EEF5;" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </opaqueInsets>
+      </ScrollPane>
+   </center>
+</BorderPane>

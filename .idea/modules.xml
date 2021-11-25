@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BakeryService/BakeryService.iml" filepath="$PROJECT_DIR$/BakeryService/BakeryService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HotelClient/HotelClient.iml" filepath="$PROJECT_DIR$/HotelClient/HotelClient.iml" />
+    </modules>
+  </component>
+</project>

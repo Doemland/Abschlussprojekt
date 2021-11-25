@@ -1,0 +1,9 @@
+.TextElement{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 16;
+}
+.TextElementHeader{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 26;
+    -fx-alignment: CENTER;
+}

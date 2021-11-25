@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+   <GridPane fx:id="viewBestellung" alignment="TOP_CENTER" prefHeight="824.0" prefWidth="839.0" styleClass="container" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KontaktViewController">
+       <columnConstraints>
+           <ColumnConstraints hgrow="SOMETIMES" maxWidth="470.66668701171875" minWidth="10.0" prefWidth="160.33334350585938" />
+           <ColumnConstraints hgrow="SOMETIMES" maxWidth="578.0001424153645" minWidth="10.0" prefWidth="147.66668701171875" />
+           <ColumnConstraints hgrow="SOMETIMES" maxWidth="676.6666870117188" minWidth="10.0" prefWidth="185.66664632161456" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="676.6666870117188" minWidth="10.0" prefWidth="125.66672770182288" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="676.6666870117188" minWidth="10.0" prefWidth="342.99993896484375" />
+       </columnConstraints>
+       <rowConstraints>
+      <RowConstraints maxHeight="312.0" minHeight="10.0" prefHeight="312.0" vgrow="SOMETIMES" />
+           <RowConstraints maxHeight="97.0" minHeight="0.0" prefHeight="26.0" vgrow="SOMETIMES" />
+           <RowConstraints vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+           <RowConstraints vgrow="SOMETIMES" />
+           <RowConstraints vgrow="SOMETIMES" />
+           <RowConstraints maxHeight="59.0" minHeight="0.0" prefHeight="29.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="498.6666564941406" minHeight="10.0" prefHeight="373.0" vgrow="SOMETIMES" />
+       </rowConstraints>
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Firma:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Kontakt Person:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Ort:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Telefon Nummer:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="E-Mail:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: RIGHT;" styleClass="TextElement" text="Straße:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Text fx:id="KontaktViewFirmenname" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="KontaktViewKontaktPerson" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="KontaktViewTelefonNummer" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="KontaktViewEmail" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="2" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="KontaktViewOrtschaft" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="KontaktViewStrasse" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Hausnr.:" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="PLZ.:" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="KontaktViewPLZ" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="KontaktViewHausnummer" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Text>
+   </children>
+   <stylesheets>
+      <URL value="@../css/ContainerStyl.css" />
+      <URL value="@../css/TextElement.css" />
+   </stylesheets>
+   </GridPane>

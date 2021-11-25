@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:id="SchluesselViewGrid" alignment="TOP_CENTER" prefHeight="824.0" prefWidth="839.0" styleClass="container" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SchluesselViewController">
+       <columnConstraints>
+           <ColumnConstraints hgrow="SOMETIMES" maxWidth="969.0" minWidth="10.0" prefWidth="544.0" />
+           <ColumnConstraints hgrow="SOMETIMES" maxWidth="811.0" minWidth="10.0" prefWidth="265.0" />
+       </columnConstraints>
+       <rowConstraints>
+           <RowConstraints maxHeight="346.0" minHeight="10.0" prefHeight="165.0" vgrow="SOMETIMES" />
+           <RowConstraints maxHeight="824.0" minHeight="10.0" prefHeight="629.0" vgrow="SOMETIMES" />
+       </rowConstraints>
+       <children>
+      <TableView fx:id="SchluesselViewTable" prefHeight="742.0" prefWidth="913.0" GridPane.rowIndex="1">
+        <columns>
+          <TableColumn fx:id="SchluesselViewProduktColumn" editable="false" prefWidth="142.00002539157867" text="Produkt" />
+          <TableColumn fx:id="SchluesselViewAktuellColumn" editable="false" prefWidth="127.33332824707031" text="Schlüssel Aktuell" />
+            <TableColumn fx:id="SchluesselViewNewColumn" prefWidth="108.66668701171875" text="Neuer Schlüssel" />
+        </columns>
+         <GridPane.margin>
+            <Insets left="50.0" />
+         </GridPane.margin>
+      </TableView>
+      <Button fx:id="SchluesselViewSpeichern" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" stylesheets="@../css/Button.css" text="Speichern" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Harlow Solid Italic" size="24.0" />
+         </font>
+      </Button>
+      <GridPane prefHeight="185.0" prefWidth="307.0" GridPane.columnIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="56.88885498046875" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="67.55554008483887" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="70.11108398437501" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Neuen Schlüssel anlegen:" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="SchluesselViewNewSchluesselName" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="162.0" promptText="Namen geben" styleClass="TextElement" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="40.0" right="40.0" />
+               </GridPane.margin>
+            </TextField>
+            <Button fx:id="SchluesselViewNewSchluesselSpeichern" alignment="CENTER" mnemonicParsing="false" stylesheets="@../css/Button.css" text="Hinzufügen" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Harlow Solid Italic" size="24.0" />
+               </font>
+            </Button>
+         </children>
+         <GridPane.margin>
+            <Insets right="20.0" top="15.0" />
+         </GridPane.margin>
+         <stylesheets>
+            <URL value="@../css/ContainerStyl.css" />
+            <URL value="@../css/TextElement.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="container" />
+            <String fx:value="TextElement" />
+         </styleClass>
+      </GridPane>
+      <GridPane prefHeight="185.0" prefWidth="906.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="650.0" minWidth="10.0" prefWidth="214.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="736.0" minWidth="0.0" prefWidth="247.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SchlüsselWahlen:" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="SchluesselViewSchluesselWahl" promptText="Schlüssel Auswählen" styleClass="dropdown" stylesheets="@../css/Dropdown.css" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+         </children>
+         <GridPane.margin>
+            <Insets left="50.0" />
+         </GridPane.margin>
+      </GridPane>
+       </children>
+       <stylesheets>
+           <URL value="@../css/ContainerStyl.css" />
+           <URL value="@../css/Tabelview.css" />
+       </stylesheets>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   </GridPane>

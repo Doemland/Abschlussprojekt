@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Scene xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.wifi.bakeryservice.controller.MainController">
+
+    <AnchorPane prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #F4EEF5;">
+        <children>
+            <GridPane layoutX="670.0" layoutY="60.0" prefHeight="951.0" prefWidth="275.0" styleClass="container" stylesheets="@../ContainerStyl.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints maxHeight="403.0" minHeight="10.0" prefHeight="242.00001525878906" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <children>
+                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        <children>
+                            <ImageView fx:id="Home" fitHeight="240.0" fitWidth="222.0" layoutX="24.0" layoutY="31.0" preserveRatio="true" styleClass="container" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="21.0">
+                                <image>
+                                    <Image url="@../bilder/angepast.png" />
+                                </image>
+                            </ImageView>
+                        </children>
+                        <opaqueInsets>
+                            <Insets />
+                        </opaqueInsets>
+                    </AnchorPane>
+                    <Button fx:id="BestellungButton" alignment="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" stylesheets="@../Button.css" text="Bestellung" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                        <font>
+                            <Font name="Harlow Solid Italic" size="24.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="VerlaufButton" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" stylesheets="@../Button.css" text="Verlauf" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                        <font>
+                            <Font name="Harlow Solid Italic" size="24.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="SchluesselButton" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" stylesheets="@../Button.css" text="Schlüssel" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                        <font>
+                            <Font name="Harlow Solid Italic" size="24.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="KontaktButton" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" stylesheets="@../Button.css" text="Kontakt" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                        <font>
+                            <Font name="Harlow Solid Italic" size="24.0" />
+                        </font>
+                    </Button>
+                </children>
+            </GridPane>
+            <GridPane fx:id="viewBestellung" alignment="TOP_CENTER" layoutX="309.0" layoutY="126.0" prefHeight="889.0" prefWidth="945.0" styleClass="container" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="135.0">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="470.66668701171875" minWidth="10.0" prefWidth="160.33334350585938" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="578.0001424153645" minWidth="10.0" prefWidth="147.66668701171875" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="676.6666870117188" minWidth="10.0" prefWidth="185.66664632161456" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="676.6666870117188" minWidth="10.0" prefWidth="125.66672770182288" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="676.6666870117188" minWidth="10.0" prefWidth="342.99993896484375" />
+                </columnConstraints>
+                <rowConstraints>
+               <RowConstraints maxHeight="226.0" minHeight="10.0" prefHeight="219.33331298828125" vgrow="SOMETIMES" />
+                    <RowConstraints vgrow="SOMETIMES" />
+                    <RowConstraints vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints vgrow="SOMETIMES" />
+                    <RowConstraints vgrow="SOMETIMES" />
+                    <RowConstraints vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="498.6666564941406" minHeight="10.0" prefHeight="295.66670735677087" vgrow="SOMETIMES" />
+                </rowConstraints>
+            <children>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Firma:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <font>
+                     <Font name="Berlin Sans FB" size="16.0" />
+                  </font>
+               </Text>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Kontakt Person:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <font>
+                     <Font name="Berlin Sans FB" size="16.0" />
+                  </font>
+               </Text>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Ort:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                  <font>
+                     <Font name="Berlin Sans FB" size="16.0" />
+                  </font>
+               </Text>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Telefon Nummer:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                  <font>
+                     <Font name="Berlin Sans FB" size="16.0" />
+                  </font>
+               </Text>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="E-Mail:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                  <font>
+                     <Font name="Berlin Sans FB" size="16.0" />
+                  </font>
+               </Text>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: RIGHT;" styleClass="TextElement" text="Straße:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+               <Text fx:id="KontaktViewFirmenname" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <GridPane.margin>
+                     <Insets left="10.0" />
+                  </GridPane.margin>
+               </Text>
+               <Text fx:id="KontaktViewKontaktPerson" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <GridPane.margin>
+                     <Insets left="10.0" />
+                  </GridPane.margin>
+               </Text>
+               <Text fx:id="KontaktViewTelefonNummer" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                  <GridPane.margin>
+                     <Insets left="10.0" />
+                  </GridPane.margin>
+               </Text>
+               <Text fx:id="KontaktViewEmail" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets left="10.0" />
+                  </GridPane.margin>
+               </Text>
+               <Text fx:id="KontaktViewOrtschaft" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                  <GridPane.margin>
+                     <Insets left="10.0" />
+                  </GridPane.margin>
+               </Text>
+               <Text fx:id="KontaktViewStrasse" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                  <GridPane.margin>
+                     <Insets left="10.0" />
+                  </GridPane.margin>
+               </Text>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Hausnr.:" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                  <font>
+                     <Font name="Berlin Sans FB" size="16.0" />
+                  </font>
+               </Text>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="PLZ.:" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                  <font>
+                     <Font name="Berlin Sans FB" size="16.0" />
+                  </font>
+               </Text>
+               <Text fx:id="KontaktViewPLZ" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                  <GridPane.margin>
+                     <Insets left="10.0" />
+                  </GridPane.margin>
+               </Text>
+               <Text fx:id="KontaktViewHausnummer" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TextElement" text="Text" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                  <GridPane.margin>
+                     <Insets left="10.0" />
+                  </GridPane.margin>
+               </Text>
+            </children>
+            <stylesheets>
+               <URL value="@../ContainerStyl.css" />
+               <URL value="@../TextElement.css" />
+            </stylesheets>
+            </GridPane>
+         <Pane prefHeight="114.0" styleClass="container" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="10.0">
+            <children>
+               <Text layoutX="335.0" layoutY="66.0" strokeWidth="0.0" styleClass="TextElementHeader" text="Verlauf" textAlignment="RIGHT" />
+            </children>
+            <stylesheets>
+               <URL value="@../ContainerStyl.css" />
+               <URL value="@../TextElement.css" />
+            </stylesheets>
+         </Pane>
+        </children></AnchorPane>
+    <fill>
+        <LinearGradient endY="1.0">
+            <stops>
+                <Stop>
+                    <color>
+                        <Color red="1.0" green="0.8823529481887817" blue="0.5411764979362488" />
+                    </color>
+                </Stop>
+                <Stop offset="1.0">
+                    <color>
+                        <Color red="0.8274509906768799" green="0.8313725590705872" blue="0.9647058844566345" />
+                    </color>
+                </Stop>
+            </stops>
+        </LinearGradient>
+    </fill>
+</Scene>
