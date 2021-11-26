@@ -9,9 +9,12 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <org.hibernate.hibernate.core>5.5.3.Final</org.hibernate.hibernate.core>
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
         <org.openjfx>17.0.1</org.openjfx>
+        <org.hsqldb>2.6.0</org.hsqldb>
+
     </properties>
 
     <dependencies>
@@ -39,6 +42,13 @@
             <artifactId>javafx-fxml</artifactId>
             <version>${org.openjfx}</version>
             <type>pom</type>
+        </dependency>
+        <!-- hsqldb -->
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>${org.hsqldb}</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
